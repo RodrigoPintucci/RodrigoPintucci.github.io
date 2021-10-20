@@ -63,10 +63,29 @@
                 <image x="420" y="280" href="eyegif.gif" height="70" width="110"/>
                 <image x="495" y="280" href="eyegif.gif" height="70" width="110"/>
             </g>
+            <g id="skin3">
+                <!--Skin cabeça 3-->
+                <rect x="400" y="200" width="200" height="200" rx="80" ry="80" fill="white" />
+                <image x="420" y="275" href="sans.png" height="110" width="190"/>
+            </g>
+            <g id="skin4">
+                <!--Skin cabeça 4-->
+                <defs>
+                    <rect id="rect" x="400" y="200" width="200" height="200" rx="80" ry="80"/>
+                    <clipPath id="clip">
+                      <use xlink:href="#rect"/>
+                    </clipPath>
+                  </defs>
+                
+                  <use xlink:href="#rect"/>
+                  <image xlink:href="tvstatic.gif" x="300" y="170" width="30%" height="30%" clip-path="url(#clip)"/>
+            </g>
             <g id="skin0">
                 <!--Cabeça-->
                 <rect x="400" y="200" width="200" height="200" rx="80" ry="80" style="stroke: #fff4df; fill: #fff4df;" />
             </g>
+
+
             <!--Mechas-->
             <rect x="0" y="0" width="140" height="60" rx="10" fill="#c8bfe7"  transform="translate(370 260) rotate(-40)" />
             <rect x="0" y="0" width="140" height="70" rx="10" fill="#c8bfe7"  transform="translate(470 283) rotate(-80)" />

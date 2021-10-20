@@ -45,17 +45,37 @@ function toggleDivs2() {
   var skin0 = document.getElementById('skin0');
   var skin1 = document.getElementById('skin1');
   var skin2 = document.getElementById('skin2');
+  var skin3 = document.getElementById('skin3');
+  var skin4 = document.getElementById('skin4');
   if (skin0.style.display != 'none') {
     skin0.style.display = 'none';
     skin1.style.display = 'inline';
     skin2.style.display = 'none';
+    skin3.style.display = 'none';
+    skin4.style.display = 'none';
   } else if (skin1.style.display != 'none') {
     skin0.style.display = 'none';
     skin1.style.display = 'none';
     skin2.style.display = 'inline';
+    skin3.style.display = 'none';
+    skin4.style.display = 'none';
+  } else if (skin2.style.display != 'none') {
+    skin0.style.display = 'none';
+    skin1.style.display = 'none';
+    skin2.style.display = 'none';
+    skin3.style.display = 'inline';
+    skin4.style.display = 'none';
+  } else if (skin3.style.display != 'none') {
+    skin0.style.display = 'none';
+    skin1.style.display = 'none';
+    skin2.style.display = 'none';
+    skin3.style.display = 'none';
+    skin4.style.display = 'inline';
   } else {
     skin0.style.display = 'inline';
     skin1.style.display = 'none';
     skin2.style.display = 'none';
+    skin3.style.display = 'none';
+    skin4.style.display = 'none';
   }
 }
