@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
+    <meta charset ="UTF-8"/>
 <head>
+    <title>Tabby!</title>
+    <link rel="icon" href="tabbyena3.png">
     <link href="svgcss.css" rel="stylesheet"/>
 </head>
 <body>
@@ -121,8 +124,15 @@
             </g>
             <g id="tela2">
                 <!--Tela 2-->
-                <rect x="0" y="0" width="220" height="160" rx="6" fill="#000000" transform="translate(630 550)"/>
-                <image x="635" y="530" href="eyegif.gif" height="200" width="200"/>
+                <defs>
+                    <rect id="rect2" x="630" y="550" width="220" height="160" rx="6"/>
+                    <clipPath id="clip2">
+                      <use xlink:href="#rect2"/>
+                    </clipPath>
+                  </defs>
+                
+                  <use xlink:href="#rect2"/>
+                  <image xlink:href="eyegif.gif" x="585" y= "480" width="300" height="300" clip-path="url(#clip2)"/>
             </g>
             <g id="tela3">
                 <!--Tela 3-->
